@@ -49,19 +49,19 @@ body{
 }
 
 header{
-    padding: 0 6em;
+    padding: 0 5em;
 
 }
 
 main{
-    padding: 0 6em;
+    padding: 0 5em;
 }
 
 
 .navigation-tab{
     display: flex;
     justify-content: space-between;    
-    padding: 2em 0;
+    padding: 1.3em 0;
     align-items: center;
 }
 
@@ -77,7 +77,8 @@ main{
 }
 
 .contact-link a{
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 .contact-link img{
@@ -92,12 +93,12 @@ font-weight: 700;
 line-height: 49px;
 letter-spacing: 0em;
 text-align: left;
-padding: 200px 0 0 0;
+padding: 160px 0 0 0;
 }
 
 h1 span{
     color: var(--second-text-color);
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -128,8 +129,9 @@ h1 span{
 }
 
 
+
 .flow-btns{
-    margin:10em 0 2em 0;
+    margin:7em 0 2em 0;
     width:351px;
     height: 27px;
     display: flex;
@@ -137,7 +139,7 @@ h1 span{
     gap: 20px;
 }
 
-.btns button{
+ button{
     padding: 4px 24px;
     border-radius: 36px;
     border: 0.5px solid var(--button-bg-color);
@@ -145,7 +147,7 @@ h1 span{
     font-size: 700;
 }
 
-.btns button:hover{
+button:hover{
     cursor: pointer;
 }
 
