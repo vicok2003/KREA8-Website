@@ -49,12 +49,12 @@ body{
 }
 
 header{
-    padding: 0 5em;
+    padding: 0 4em;
 
 }
 
 main{
-    padding: 0 5em;
+    padding: 0 4em;
 }
 
 
@@ -127,6 +127,54 @@ h1 span{
     color: var(--second-text-color);
     font-family: 'Zodiak LightItalic', sans-serif !important;
 }
+
+
+/* animations */
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.s-p {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fadeOutUp {
+    animation: fadeOutUp 0.5s forwards;
+}
+
+.fadeInDown {
+    animation: fadeInDown 0.5s forwards;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    animation: fadeInDown 0.5s forwards; 
+}
+
+
+
 
 
 

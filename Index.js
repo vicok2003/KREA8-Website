@@ -1,22 +1,33 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.flow-btns button');
-    const paragraphs = [document.getElementById('para1'), document.getElementById('para2'), document.getElementById('para3')];
+document.addEventListener("DOMContentLoaded", function() {
+    let currentActivePara = document.getElementById("para1");
+    currentActivePara.classList.add("visible"); 
 
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Hide all paragraphs
-            paragraphs.forEach(p => p.style.display = 'none');
-            
-            // Show the targeted paragraph
-            const targetId = this.getAttribute('data-target');
-            const targetPara = document.getElementById(targetId);
-            if (targetPara) {
-                targetPara.style.display = 'block';
-            }
-            
-            // Update active button state
-            buttons.forEach(btn => btn.classList.remove('active'));
+    const firstButton = document.querySelector(`[data-target='para1']`);
+    firstButton.classList.add('active');
+
+    document.querySelectorAll(".flow-btns button").forEach(button => {
+        button.addEventListener("click", function() {
+            const targetParaId = this.getAttribute("data-target");
+            const targetPara = document.getElementById(targetParaId);
+
+            document.querySelectorAll(".flow-btns button").forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
+
+            if (currentActivePara !== targetPara) {
+                // Fade out and up current paragraph
+                currentActivePara.classList.add("fadeOutUp");
+                currentActivePara.classList.remove("visible");
+
+                
+                setTimeout(() => {
+                    currentActivePara.style.display = "none"; 
+                    currentActivePara.classList.remove("fadeOutUp");
+
+                    targetPara.style.display = "block"; 
+                    targetPara.classList.add("visible");
+                    currentActivePara = targetPara;
+                }, 500); 
+            }
         });
     });
 });
