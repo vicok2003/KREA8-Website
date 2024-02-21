@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'Zodiak';
+    src: url('./Fonts/Zodiak/Fonts/Variable/Zodiak-Variable.ttf') format('truetype');
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 1.3em;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--second-text-color);
+    border-radius: 10px;
+  }
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover{
+    background-color: #000000;
+    color: #ffffff;
+    padding:2px 10px;
+    border-radius: 20px;
+}
+    
+
+body{
+    font-family: 'Zodiak', serif;
+}
+
+:root{
+    --text-color: #000000;
+    --second-text-color: #505050;
+    --button-bg-color: #D8D8D8;
+}
+
+header{
+    padding: 0 6em;
+
+}
+
+main{
+    padding: 0 6em;
+}
+
+
+.navigation-tab{
+    display: flex;
+    justify-content: space-between;    
+    padding: 2em 0;
+    align-items: center;
+}
+
+.big-circle img{
+    width: 20px;
+    height: 20px;
+}
+
+.contact-link{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact-link a{
+    font-weight: 500;
+}
+
+.contact-link img{
+    height: 6px;
+    width: 6px;
+}
+
+h1{
+font-family: Zodiak;
+font-size: 36px;
+font-weight: 700;
+line-height: 49px;
+letter-spacing: 0em;
+text-align: left;
+padding: 200px 0 0 0;
+}
+
+h1 span{
+    color: var(--second-text-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.section-A{
+    margin-top: 2em;
+}
+
+.f-p{
+    padding: 0.7em 0 0 0.6em ;
+    width: 590px;
+}
+
+.f-p span{
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Zodiak LightItalic';
+    src: url('./Fonts/Zodiak/Fonts/OTF/Zodiak-LightItalic.otf') format('truetype');
+}
+
+.s-p{
+    padding: 1em 0 0 1.4em ;
+    width: 560px;
+    /* border: 1px solid #f00; */
+    color: var(--second-text-color);
+    font-family: 'Zodiak LightItalic', sans-serif !important;
+}
+
+
+.flow-btns{
+    margin:10em 0 2em 0;
+    width:351px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btns button{
+    padding: 4px 24px;
+    border-radius: 36px;
+    border: 0.5px solid var(--button-bg-color);
+    font-family: 'zodiak', sans-serif !important;
+    font-size: 700;
+}
+
+.btns button:hover{
+    cursor: pointer;
+}
+
+.active{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.footer img{
+    width: 100%;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    header{
+        padding: 0 2em;
+    
+    }
+    
+    main{
+        padding: 0 2em;
+    }
+
+    .f-p{
+        width: 325px;
+        height: 88px;
+    }
+    .s-p{
+        width: 325px;
+        height: 88px;
+    }
+    
+    .flow-btns{
+        display: flex;
+        justify-content: center;
+        padding: 0 6em;
+        width: 100%;
+        gap: 12px;
+    }
+
+   .footer img{
+    height: 200px;
+    width: 100%;
+   }
+}
+
+@media (max-width: 640px){
+    .navigation-tab{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header{
+        padding: 0 2em;
+    
+    }
+    
+    main{
+        padding: 0 2em;
+    }
+    
+    .f-p{
+        width: 325px;
+        height: 88px;
+    }
+    .s-p{
+        width: 325px;
+        height: 88px;
+    }
+    
+    .flow-btns{
+        display: flex;
+        justify-content: center;
+        padding: 0 6em;
+        width: 100%;
+        gap: 12px;
+    }
+
+   .footer img{
+    height: 200px;
+    width: 100%;
+   }
+}
+
+@media (max-width: 390px){
+    .navigation-tab{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header{
+        padding: 0 1.6em;
+    
+    }
+    
+    main{
+        padding: 0 1.6em;
+    }
+
+    .f-p{
+        width: 325px;
+        height: 88px;
+    }
+    .s-p{
+        width: 325px;
+        height: 88px;
+    }
+    
+    .flow-btns{
+        display: flex;
+        justify-content: center;
+        padding: 0 6em;
+        width: 100%;
+        gap: 12px;
+    }
+
+   .footer img{
+    height: 200px;
+    width: 100%;
+   }
+    
+}
+
+@media (max-width: 320px){
+    .navigation-tab{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header{
+        padding: 0 1.6em;
+    
+    }
+    
+    main{
+        padding: 0 1.2em;
+    }
+
+    .f-p{
+        width: 310px;
+        height: 88px;
+    }
+    .s-p{
+        width: 310px;
+        height: 88px;
+    }
+    
+    .flow-btns{
+        display: flex;
+        justify-content: center;
+        padding: 0 8em;
+        width: 100%;
+        gap: 10px;
+    }
+
+   .footer img{
+    height: 200px;
+    width: 100%;
+   }
+    
+}
+/* Media */
+
+/* position: relative;
+width: 1440px;
+height: 900px;
+
+background: #FFFFFF; */
