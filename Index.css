@@ -244,6 +244,10 @@ button:hover{
     height: 200px;
     width: 100%;
    }
+
+   button{
+    color: blue;
+   }
 }
 
 @media (max-width: 640px){
@@ -282,6 +286,10 @@ button:hover{
     height: 200px;
     width: 100%;
    }
+
+   button{
+    color: blue;
+   }
 }
 
 @media (max-width: 390px){
@@ -319,6 +327,10 @@ button:hover{
    .footer img{
     height: 200px;
     width: 100%;
+   }
+
+   button{
+    color: blue;
    }
     
 }
@@ -360,11 +372,8 @@ button:hover{
     width: 100%;
    }
     
+   button{
+    color: blue;
+   }
 }
-/* Media */
 
-/* position: relative;
-width: 1440px;
-height: 900px;
-
-background: #FFFFFF; */
